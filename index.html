@@ -30,6 +30,17 @@
       var item = poop[Math.floor(Math.random() * poop.length)];
       document.getElementById("funny").src = item;
     }
+    function getRandomInt(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+    }
+    function fart() {
+      alert("You are now entering a virtual fartroom where you can hang out with fellow farters.")
+      var poop = getRandomInt(1, 66164411)
+      var farter = "https://stackoverflow.com/questions/9" + poop.toString() + "/"
+      window.location.replace(farter);
+    }
   </script>
   </div>
 </body>
